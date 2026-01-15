@@ -16,16 +16,27 @@
         <source
           srcset="/img/hero-comp-1x.webp 1x, /img/hero-comp-2x.webp 2x"
           media="(min-width: 1440px)"
+          type="image/webp"
         />
         <source
           srcset="/img/hero-tab-1x.webp 1x, /img/hero-tab-2x.webp 2x"
           media="(min-width: 768px)"
+          type="image/webp"
         />
         <source
           srcset="/img/hero-mob-1x.webp 1x, /img/hero-mob-2x.webp 2x"
           media="(min-width: 320px)"
+          type="image/webp"
         />
-        <img src="/img/hero-comp-1x.webp" alt="threads and leaf" />
+        <img
+          src="/img/hero-mob-1x.webp"
+          alt="threads and leaf"
+          width="576"
+          height="692"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
       </picture>
     </div>
   </div>
