@@ -1,5 +1,5 @@
 body {
-  font-family: 'Fira Sans', sans-serif;
-  background-color: #ebf8ed;
-  color: #030a06;
+  font-family: var(--font-secondary);
+  background-color: var(--bg-section-light);
+  color: var(--text-primary);
 }

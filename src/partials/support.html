@@ -11,11 +11,11 @@
           type="text"
           name="Ім'я"
           placeholder="Іван"
-          minlength="5"
+          minlength="4"
           maxlength="64"
           required
         />
-        <p class="input-error">Імʼя має містити від 5 до 64 символів</p>
+        <p class="input-error">Імʼя має містити від 4 до 64 символів</p>
 
         <label class="support-label" for="email">Електронна пошта</label>
         <input
@@ -45,28 +45,34 @@
     <picture>
       <source
         srcset="
-          /img/support-desktop-1x.webp 1x,
-          /img/support-desktop-2x.webp 2x
+          /img/support/support-desktop-1x.webp 1x,
+          /img/support/support-desktop-2x.webp 2x
         "
         media="(min-width: 1440px)"
         type="image/webp"
       />
 
       <source
-        srcset="/img/support-tablet-1x.webp 1x, /img/support-tablet-2x.webp 2x"
+        srcset="
+          /img/support/support-tablet-1x.webp 1x,
+          /img/support/support-tablet-2x.webp 2x
+        "
         media="(min-width: 768px)"
         type="image/webp"
       />
 
       <source
-        srcset="/img/support-mobile-1x.webp 1x, /img/support-mobile-2x.webp 2x"
+        srcset="
+          /img/support/support-mobile-1x.webp 1x,
+          /img/support/support-mobile-2x.webp 2x
+        "
         media="(min-width: 320px)"
         type="image/webp"
       />
 
       <img
         class="support-img"
-        src="/img/support-desktop-2x.webp"
+        src="/img/support/support-desktop-2x.webp"
         alt="support-desktop"
         loading="lazy"
         width="645"

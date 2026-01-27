@@ -1,46 +1,94 @@
 # 🌿 EcoTote Project
 
-**🔗 Live Demo:**
-[dmytro-serhiienko.github.io/project-EcoTote](https://dmytro-serhiienko.github.io/project-EcoTote/)
+<p align="center">
+  <img src="./src/img/preview.webp" alt="Project Preview" width="1400">
+</p>
 
----
+👉 Live Demo: 🔗 https://bashmachok1982.github.io/EcoTote-Vite-Alexander/
 
-## 📄 Description
+👉 Repository: 🔗 https://github.com/Bashmachok1982/EcoTote-Vite-Alexander
 
-This is a **desktop-first team project** focused on building a full HTML + CSS
-website.  
-The project emphasizes teamwork, project management, and hands-on development
-skills.
+📌 О проекте
 
-Key highlights:
+WebStudio — это учебный проект, который со временем был полностью переработан и
+прокачан.
 
-- 🖥️ **Full HTML + CSS implementation** — building the website layout and styles
-- ⚡ **Vite bundler** — experience working with modern development tooling
-- 👥 **Team collaboration** — working with Git, creating branches, merging
-  changes, and resolving conflicts
-- 📋 **Task management** — planning and tracking progress using Trello
-- 🏅 **Team Lead experience** — coordinating the team and presenting the final
-  project
+Изначально сайт создавался как обычный HTML/CSS/JS-проект в учебных целях. Позже
+он был рефакторен, перенесён на Vite и приведён к более профессиональному виду —
+с упором на архитектуру, поддержку и производительность.
 
----
+🔄 Эволюция проекта 🧱 Было
 
-## 🧰 Technologies Used
+Классический учебный сайт
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=fff)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff)
+Статическая структура
 
-- **HTML5 & CSS3** — semantic markup and responsive styling
-- **Vite** — modern project bundling and development workflow
-- **Git & GitHub** — branch management, merges, and conflict resolution
-- **Project management** — Trello for tasks and progress tracking
-- **Team coordination** — leading the team and presenting the project outcome
+Цвета и стили разбросаны по CSS
 
----
+Минимальная модульность
 
-## 📱 Note on Responsiveness
+🚀 Стало
 
-This website is **optimized for desktop screens**, with the main layout designed
-for large screens.  
-Mobile and tablet views are secondary and not fully adapted.
+⚡ Vite как сборщик проекта
+
+🎨 CSS Variables для всех цветов и шрифтов
+
+🧩 Чёткая структура файлов и папок
+
+📱 Адаптивная вёрстка (mobile + desktop)
+
+🛠 Удобная масштабируемость проекта
+
+🎨 Стили и дизайн
+
+Все цвета вынесены в :root
+
+background
+
+text
+
+accent
+
+border
+
+hover / focus
+
+Используется семантическое именование переменных
+
+Шрифты также вынесены в переменные
+
+Изображения аккуратно разложены по папкам
+
+Код стал проще поддерживать и расширять
+
+📈 Производительность
+
+Несмотря на:
+
+полный рефакторинг стилей
+
+переход на CSS-переменные
+
+переработку структуры
+
+оптимизацию ассетов
+
+👉 производительность не пострадала 💪
+
+🔍 Lighthouse результаты:
+
+📱 Mobile: 91+
+
+🖥 Desktop: 96%
+
+🛠 Используемые технологии
+
+🧱 HTML5
+
+🎨 CSS3 (CSS Variables)
+
+⚙️ JavaScript (ES Modules)
+
+⚡ Vite
+
+🌍 GitHub Pages

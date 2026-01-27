@@ -1,15 +1,15 @@
 .support-title {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-36);
+  line-height: var(--lh-midle);
+  letter-spacing: var(--ls-tight);
   margin-bottom: 24px;
 }
 .support-subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-18);
+  line-height: var(--lh-relaxed) 0.6;
   margin-bottom: 32px;
 }
 .support-img {
@@ -21,12 +21,12 @@
 }
 
 .support-btn {
-  background: #030a06;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #fff;
-  border: 1px solid #030a06;
+  background: var(--bg-btn);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
   border-radius: 6px;
   padding: 12px 24px;
   width: 288px;
@@ -37,9 +37,9 @@
 
 .support-label {
   margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
   display: block;
 }
 
@@ -50,8 +50,8 @@
 .support-input {
   width: 288px;
   height: 42px;
-  background: rgba(3, 10, 6, 0.05);
-  border: 1px solid rgba(3, 10, 6, 0.15);
+  background: var(--bg-input);
+  border: 1px solid var(--border-alpha);
   border-radius: 6px;
   padding: 8px 12px;
 }
@@ -64,23 +64,23 @@
 .support-textarea {
   width: 288px;
   height: 180px;
-  background: rgba(3, 10, 6, 0.05);
-  border: 1px solid rgba(3, 10, 6, 0.15);
+  background: var(--bg-input);
+  border: 1px solid var(--border-alpha);
   border-radius: 6px;
   padding: 12px;
 }
 
 .support-input::placeholder,
 .support-textarea::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(3, 10, 6, 0.6);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  color: var(--text-placeholder);
 }
 
 .support-input:hover::placeholder,
 .support-textarea:hover::placeholder {
-  color: #030a06;
+  color: var(--text-placeholder-hover);
 }
 
 .support-input:not(:placeholder-shown)::placeholder,
@@ -90,20 +90,22 @@
 
 .support-input,
 .support-textareva {
-  border: 1px solid rgba(3, 10, 6, 0.15);
-  background: rgba(3, 10, 6, 0.05);
-  transition: border-color 0.3s ease, background 0.3s ease;
+  border: 1px solid var(--border-alpha);
+  background: var(--bg-input);
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
 
 .support-input:user-invalid:not(:placeholder-shown),
 .support-textarea:user-invalid:not(:placeholder-shown) {
-  border: 1px solid #d64040;
-  background: #f8f2f2;
+  border: 1px solid var(--border-error);
+  background: var(--bg-input-error);
 }
 
 .input-error {
   font-size: 14px;
-  color: #d64040;
+  color: var(--text-error);
   margin-top: 4px;
   display: none;
   opacity: 0;
@@ -119,8 +121,8 @@
 .support-input:focus,
 .support-textarea:focus {
   outline: none;
-  border-color: rgba(3, 10, 6, 0.4);
-  background: rgba(3, 10, 6, 0.05);
+  border-color: var(--border-light-alpha);
+  background: var(--bg-input);
 }
 
 .support-textarea {
@@ -205,13 +207,14 @@
     width: 644px;
     height: 767px;
 
-    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.5s ease;
 
     &:hover,
     &:focus {
       transform: scale(1.02);
-      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.5),
-        0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-general);
     }
   }
 
@@ -232,12 +235,12 @@
     }
 
     &:active {
-      background: #113916;
+      background: var(--bg-btn-active);
       opacity: 0.6;
     }
 
     &:disabled {
-      background: #030a06;
+      background: var(--bg-btn);
       opacity: 0.2;
     }
   }

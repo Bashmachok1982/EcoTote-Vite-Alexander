@@ -1,9 +1,9 @@
 .reviews-title {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-36);
+  line-height: var(-lh-midle);
+  letter-spacing: var(--ls-tight);
   margin-bottom: 32px;
 }
 
@@ -21,22 +21,22 @@
 .star-svg {
   width: 24px;
   height: 24px;
-  fill: #3ac04c;
+  fill: var(--icon-primary);
 }
 
 .text {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-20);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
   margin-top: 12px;
   margin-bottom: 12px;
 }
 .author {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
 }
 
 @media screen and (min-width: 768px) {
@@ -77,12 +77,12 @@
 }
 
 .reviews-title {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: var(--font-primary);
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-36);
+  line-height: var(--lh-midle);
+  letter-spacing: var(--ls-tight);
   text-align: center;
   color: #030a06;
   margin-bottom: 32px;
@@ -100,19 +100,19 @@
 }
 
 .text {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-20);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
 .author {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
 }
 
 @media screen and (min-width: 768px) {
@@ -145,7 +145,7 @@
 
 @media screen and (min-width: 1440px) {
   .reviews-title {
-    font-size: 48px;
+    font-size: var(--fs-48);
     max-width: 560px;
     margin: 0 auto 80px;
   }
@@ -154,7 +154,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
     width: 100%;
-    font-size: 20px;
+    font-size: var(--fs-20);
     letter-spacing: 0;
   }
   .reviews-list {
@@ -188,7 +188,7 @@
     &:hover {
       rotate: -10deg;
       transform: scale(1.5);
-      fill: rgb(74, 245, 97);
+      fill: var(--icon-on-accent-hover);
     }
   }
 }

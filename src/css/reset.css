@@ -1,6 +1,114 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  /* ================= BASE COLORS (палитра) ================= */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-neutral-100: #030a06;
+  --color-neutral-200: #75d281;
+  --color-neutral-300: #ebf8ed;
+  --color-neutral-400: #d64040;
+  --color-neutral-600: #f8f2f2;
+  --color-neutral-800: #113916;
+  --color-neutral-700: #999;
+  --color-neutral-900: #2d65bc;
+  --color-youtube: #ea333e;
+
+  --color-primary-500: #3ac04c;
+  --color-primary-600: #b300b3;
+
+  --color-success-500: rgb(74, 245, 97);
+
+  --color-overlay-dark: rgba(3, 10, 6, 0.05);
+  --color-overlay-placeholder: rgba(3, 10, 6, 0.6);
+
+  --color-border-alpha: rgba(3, 10, 6, 0.15);
+  --color-border-light-alpha: rgba(3, 10, 6, 0.4);
+
+  --color-bg-disabled-alpha: rgba(55, 65, 81, 0.2);
+  --color-disabled-alpha: rgba(55, 65, 81, 0.4);
+  --color-visible-alpha: rgba(3, 10, 6, 0.15);
+
+  --color-bg-modal-alpha: rgba(0, 0, 0, 0.5);
+
+  /* ================= BACKGROUNDS ================= */
+  --bg-page: var(--color-white);
+  --bg-section-light: var(--color-neutral-300);
+  --bg-section-green: var(--color-neutral-200);
+  --bg-modal: var(--color-neutral-200);
+  --bg-modal-dark: var(--color-bg-modal-alpha);
+  --bg-icon: var(--color-border-alpha);
+  --bg-btn: var(--color-neutral-100);
+  --bg-btn-active: var(--color-neutral-800);
+  --bg-btn-disabled: var(--color-bg-disabled-alpha);
+  --bg-input: var(--color-overlay-dark);
+  --bg-input-error: var(--color-neutral-600);
+  --bg-link-hover: var(--color-neutral-800);
+  --bg-link-focus: var(--color-neutral-100);
+
+  /* ================= TEXT ================= */
+  --text-primary: var(--color-neutral-100);
+  --text-secondary: var(--color-white);
+  --text-error: var(--color-neutral-400);
+
+  --text-link-accent: var(--color-neutral-100);
+  --text-link-hover: var(--color-neutral-800);
+  --text-link-disabled: var(--color-neutral-700);
+
+  --text-placeholder: var(--color-overlay-placeholder);
+  --text-placeholder-hover: var(--color-neutral-100);
+
+  /* ================= BORDERS ================= */
+  --border-default: var(--color-neutral-100);
+  --border-green: var(--color-neutral-800);
+  --border-error: var(--color-neutral-400);
+  --border-alpha: var(--color-border-alpha);
+  --border-light-alpha: var(--color-border-light-alpha);
+  --border-disabled-alpha: var(--color-bg-disabled-alpha);
+
+  /* ================= ICONS ================= */
+  --icon-primary: var(--color-primary-500);
+  --icon-on-accent-hover: var(--color-success-500);
+  --icon-inst-hover: var(--color-primary-600);
+  --icon-In-hover: var(--color-neutral-900);
+  --icon-youtub-hover: var(--color-youtube);
+
+  /* ================= SHADOWS ================= */
+  --shadow-general:
+    inset 0 0 0 4px rgba(255, 255, 255, 0.5), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+
+  /* ================= FONTS ================= */
+  --font-primary: 'Comfortaa', sans-serif;
+  --font-secondary: 'Fira Sans', sans-serif;
+
+  /* ================= FONT WEIGHTS ================= */
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  /* ================= FONT SIZES ================= */
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-48: 48px;
+  --fs-56: 56px;
+
+  /* ================= LINE HEIGHTS ================= */
+  --lh-tight: 1.4;
+  --lh-midle: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.6;
+
+  /* ================= LETTER SPACING ================= */
+  --ls-tight: 0.01em;
+}
 
 h1,
 h2,
@@ -21,7 +129,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #030a06;
+  color: var(--text-link-accent);
   font-style: normal;
 }
 

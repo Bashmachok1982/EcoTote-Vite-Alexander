@@ -1,5 +1,5 @@
 .footer {
-  background: #75d281;
+  background: var(--bg-section-green);
   text-align: center;
 }
 
@@ -24,13 +24,13 @@
 
 .footer__nav-link,
 .footer__address {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
 }
 
 .footer__nav-link.disabled {
-  color: #999;
+  color: var(--text-link-disabled);
   cursor: default;
   text-decoration: none;
 }
@@ -59,7 +59,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background-color: rgba(3, 10, 6, 0.15);
+  background-color: var(--bg-icon);
 }
 
 .footer-contacts-list {
@@ -70,7 +70,7 @@
 
 .footer__copyright {
   padding-bottom: 16px;
-  line-height: 1.6;
+  line-height: var(--lh-relaxed);
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +139,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: rgba(3, 10, 6, 0.15);
+    background-color: var(--bg-icon);
   }
 
   .footer__nav {
@@ -180,13 +180,13 @@
 
   .footer__nav-link:active,
   .footer__address:active {
-    color: #113916;
+    color: var(--text-link-hover);
     opacity: 0.6;
   }
 
   .footer__nav-link:disabled,
   .footer__address:disabled {
-    color: #999;
+    color: var(--text-link-disabled);
     pointer-events: none;
     cursor: default;
     text-decoration: none;
@@ -200,7 +200,7 @@
     bottom: -6px;
     width: 0;
     height: 2px;
-    background-color: #030a06;
+    background-color: var(--bg-link-focus);
     transition: width 0.3s;
   }
 
@@ -213,7 +213,7 @@
 
   .footer__nav-link:active::after,
   .footer__address:active::after {
-    background-color: #113916;
+    background-color: var(--bg-link-hover);
     opacity: 0.6;
   }
 
@@ -228,12 +228,12 @@
   }
 
   .footer__social-list .footer__social-item:nth-child(1) svg:hover {
-    fill: #b300b3;
+    fill: var(--icon-inst-hover);
   }
   .footer__social-list .footer__social-item:nth-child(2) svg:hover {
-    fill: #2d65bc;
+    fill: var(--icon-In-hover);
   }
   .footer__social-list .footer__social-item:nth-child(3) svg:hover {
-    fill: #ea333e;
+    fill: var(--icon-youtub-hover);
   }
 }

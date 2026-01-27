@@ -8,8 +8,11 @@
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
-  transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-  background: rgba(0, 0, 0, 0.5);
+  transition:
+    visibility 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  background: var(--color-bg-modal-alpha);
 }
 
 body.modal-open {
@@ -29,7 +32,7 @@ body.modal-open {
   padding: 32px 20px;
   display: flex;
   flex-direction: column;
-  background-color: #75d281;
+  background-color: var(--bg-modal);
   overflow-y: auto;
 }
 
@@ -53,9 +56,9 @@ body.modal-open {
 .mobile-modal-nav-link,
 .mobile-modal-contacts-link {
   display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
   text-decoration: none;
   transition: color 0.3s ease;
 }

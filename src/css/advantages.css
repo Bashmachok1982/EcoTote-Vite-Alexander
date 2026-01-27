@@ -1,40 +1,40 @@
 .advantages-subtitle {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
   margin-bottom: 12px;
 }
 
 .advantages-title {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-36);
+  line-height: var(--lh-midle);
+  letter-spacing: var(--ls-tight);
   margin-bottom: 20px;
 }
 
 .advantages-desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
   margin-bottom: 48px;
 }
 
 .advantages-subhead {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-24);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
 .advantages-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
 }
 
 .advantages-list {
@@ -57,7 +57,7 @@
   }
 
   .advantages-desc {
-    font-size: 18px;
+    font-size: var(--fs-18);
     margin-bottom: 32px;
   }
 
@@ -97,7 +97,7 @@
   }
 
   .advantages-subhead {
-    font-size: 32px;
+    font-size: var(--fs-32);
     margin-bottom: 24px;
   }
 
@@ -116,13 +116,14 @@
     height: auto;
     border-radius: 32px;
 
-    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.5s ease;
 
     &:hover,
     &:focus {
       transform: scale(1.02);
-      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.5),
-        0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-general);
     }
   }
 }
